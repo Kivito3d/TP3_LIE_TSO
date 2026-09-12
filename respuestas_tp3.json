@@ -1,0 +1,83 @@
+{
+  "tp_metadata": {
+    "tp_id": "TSO-2026-TP3",
+    "title": "TP N° 3: Algoritmos de Planificación de CPU",
+    "catedra": "Teoría de Sistemas Operativos - UNJu Facultad de Ingeniería",
+    "submitted_at": "2026-09-12T23:44:49.584Z"
+  },
+  "student": {
+    "name": "Kevin Alexis Roman Llampa",
+    "dni": "42034548",
+    "career": "Licenciatura en Informatica Educativa",
+    "github_user": "Kivito3d"
+  },
+  "answers": {
+    "ej1_mecanismos_vs_politicas_metricas": {
+      "metric_turnaround": "turnaround",
+      "metric_waiting": "waiting",
+      "metric_service_index": "service_index",
+      "metric_throughput": "throughput",
+      "metric_cpu_util": "cpu_util",
+      "ctx_switch": "mecanismo",
+      "priority_decision": "politica",
+      "queue_management": "mecanismo",
+      "quantum_sizing": "politica"
+    },
+    "ej2_fcfs_convoy": {
+      "final_order": "d-b-a-e-c",
+      "best_process": "d",
+      "worst_process": "c",
+      "convoy_cause": "cpu_hog_blocking"
+    },
+    "ej3_sjn_no_apropiativo": {
+      "dispatch_t0": "a",
+      "dispatch_t1": "c",
+      "preemption_behavior": "no_apropiativo",
+      "avg_wait_time": "10.8"
+    },
+    "ej4_srt_apropiativo": {
+      "preemption_condition": "remaining_less_than_current",
+      "starvation_risk": "impossible",
+      "workload_comparison": "starves_process_d",
+      "overhead_tradeoff": "context_switch_overhead"
+    },
+    "ej5_round_robin": {
+      "final_order": "b-a-d-c-e",
+      "quantum_impact_large": "approaches_sjf",
+      "tie_breaker_order": "llegadas_desbloqueos_quantum",
+      "quantum_expiration": "ready_queue_tail"
+    },
+    "ej6_prioridad_apropiativa": {
+      "priority_scale": "higher_number_higher_priority",
+      "first_dispatched": "c",
+      "preemption_event": "arrival_d_at_5",
+      "starvation_solution": "aging"
+    },
+    "ej7_hrn_algoritmo": {
+      "formula_definition": "ratio_service_wait",
+      "preemption_type": "no_apropiativo",
+      "starvation_behavior": "prevents_starvation",
+      "first_finished": "a"
+    },
+    "ej8_matriz_comparativa_multicriterio": {
+      "min_avg_wait": "prioridad_apropiativa",
+      "highest_wait_c": "fcfs",
+      "overall_most_penalized": "a_in_prioridad",
+      "max_fairness_interactive": "round_robin"
+    },
+    "ej9_planificacion_multiprocesadores": {
+      "resource_contention": "shared_memory_bus",
+      "processor_affinity": "cache_locality",
+      "load_balancing": "migration_balance"
+    },
+    "ej10_evaluacion_seleccion_politicas": {
+      "golden_rule": "no_perfect_algorithm",
+      "interactive_system": "round_robin_priority",
+      "context_switch_cost": "throughput_penalty",
+      "batch_throughput": "sjf_srt"
+    },
+    "null": {
+      "null": "Kivito3d"
+    }
+  }
+}
